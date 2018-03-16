@@ -9,4 +9,4 @@ title: jkkljh
 
 Plain text
 
-![Financial support](/assets/getting-cut-off-04 (10).jpg)
+![Financial support](/assets/test.jpg)
