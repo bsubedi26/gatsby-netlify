@@ -3,13 +3,13 @@ import React from 'react';
 export default function Template({ data }) {
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark;
-  console.log(frontmatter);
+  console.log(frontmatter.list);
   return (
     <div className="blog-post-container">
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
-        <img src={frontmatter.image} alt="Sample image"/>
+        <img src={frontmatter.list[0].image} alt="Sample image"/>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
@@ -27,7 +27,10 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
-        image
+        list {
+          image
+          markdown
+        }
       }
     }
   }
