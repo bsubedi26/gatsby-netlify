@@ -5,11 +5,10 @@ export default function Template({ data }) {
   const { frontmatter, html } = markdownRemark;
   console.log(markdownRemark);
   return (
-    <div className="blog-post-container">
+    <div className="blog-post__container">
       <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
         <div
-          className="blog-post-content"
+          className="blog-post__content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
