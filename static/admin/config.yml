@@ -15,7 +15,7 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - label: "Content"
-        name: "list"
+        name: "body"
         widget: "list"
         fields:
           - {label: "Markdown", name: "markdown", widget: "markdown"}
