@@ -5,22 +5,12 @@ backend:
 media_folder: static/assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-
-  - name: "kitchenSink" # all the things in one entry, for documentation and quick testing
-    label: "Kitchen Sink"
-    folder: "sink"
+  - name: "project" # all the things in one entry, for documentation and quick testing
+    label: "Project"
+    folder: "blog"
     create: true
     fields:
       - label: "Project Title"
-        name: "post"
         searchFields: ["title", "body"]
         valueField: "title"
       - {label: "Path", name: "path"}
@@ -31,4 +21,3 @@ collections:
         fields:
           - {label: "Markdown", name: "markdown", widget: "markdown"}
           - {label: "Image", name: "image", widget: "image"}
-          - {label: "Markdown", name: "markdown", widget: "markdown"}
