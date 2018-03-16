@@ -10,9 +10,16 @@ collections:
     folder: blog
     create: true
     fields:
+      - label: "Config"
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - label: "Content"
+      - widget: "list"
+      fields:
+        - {label: "Markdown", name: "markdown", widget: "markdown"}
+        - {label: "Image", name: "image", widget: "image"}
+
 
   - name: "kitchenSink" # all the things in one entry, for documentation and quick testing
     label: "Kitchen Sink"
