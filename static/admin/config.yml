@@ -15,10 +15,10 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - label: "Content"
-        name: "body"
+        name: "list"
         widget: "list"
         fields:
-          - {label: "Markdown", name: "markdown", widget: "markdown"}
+          - {label: "Markdown", name: "body", widget: "markdown"}
           - {label: "Image", name: "image", widget: "image"}
 
 

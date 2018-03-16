@@ -10,7 +10,7 @@ export default function Template({ data }) {
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
         <img src={frontmatter.list[0].image} alt="Sample image"/>
-        {frontmatter.list[0].markdown}
+        <p>{frontmatter.list[0].markdown}</p>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
