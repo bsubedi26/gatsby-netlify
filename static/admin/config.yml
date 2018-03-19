@@ -12,8 +12,8 @@ collections:
     label: Blog
     folder: blog
     create: true
+    slug: "{{slug}}"
     fields:
-      - { name: path, label: Path }
       - { name: title, label: Title }
       - { name: image, label: Header Image, widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
