@@ -5,13 +5,15 @@ export default function Template({ data }) {
   const { frontmatter, html } = markdownRemark;
   console.log(frontmatter);
   return (
-    <div className="blog-post__container">
-      <img src={frontmatter.image} />
-      <div className="blog-post">
-        <div
-          className="blog-post__content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+    <div>
+      <div className="blog-post__container">
+        <img className="blog-post__header" src={frontmatter.image} alt="Header image"/>
+        <div className="blog-post">
+          <div
+            className="blog-post__content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
       </div>
     </div>
   );

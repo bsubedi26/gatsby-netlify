@@ -1,6 +1,6 @@
 ---
 title: Test With Slug And Header
-image: /assets/test.jpg
+image: /assets/banner.jpg
 ---
 Sample text
 
