@@ -3,9 +3,10 @@ import React from 'react';
 export default function Template({ data }) {
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark;
-  console.log(markdownRemark);
+  console.log(frontmatter);
   return (
     <div className="blog-post__container">
+      <img src={frontmatter.image} />
       <div className="blog-post">
         <div
           className="blog-post__content"
@@ -17,12 +18,13 @@ export default function Template({ data }) {
 }
 
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query BlogPostByPath($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
       html
       frontmatter {
-        path
         title
+        image
       }
     }
   }

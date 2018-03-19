@@ -1,6 +1,6 @@
 ---
 title: Test With Slug And Header
-image: /assets/getting-cut-off-04 (10).jpg
+image: /assets/test.jpg
 ---
 Sample text
 
