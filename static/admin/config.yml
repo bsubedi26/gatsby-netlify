@@ -1,9 +1,11 @@
 backend:
-  name: github
+  name: git-gateway
   repo: alexsteele110/gatsby-netlify
 
 media_folder: static/assets
 public_folder: assets
+
+publish_mode: editorial_workflow
 
 collections:
   - name: blog
