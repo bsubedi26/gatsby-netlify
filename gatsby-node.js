@@ -27,7 +27,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       const { id } = node;
       createPage({
-        path: `/blog/${node.fields.slug}`,
+        path: `/blog${node.fields.slug}`,
         component: blogPostTemplate,
         context: {
           id,
