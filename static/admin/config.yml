@@ -8,9 +8,9 @@ public_folder: assets
 publish_mode: editorial_workflow
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: discover
+    label: Discover project
+    folder: discover
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
