@@ -1,0 +1,29 @@
+@import url("//www.discover.com/global/public/css/common.min.css?ver=12621d0cec");
+@import url("//www.discover.com/credit-cards/resources/files/themes/dfsresourcecenter/assets/css/main.min.css?v=7.1");
+
+.article__content img {
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+}
+
+.article__content h2 {
+    font-size: 140%;
+    margin-top: 30px;
+}
+
+h1.article__header {
+    font-size: 42px;
+    margin-left: -60px;
+    margin-right: -60px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.header-wrapper {
+  font-family: "MetaOffcPro Bold", Arial, sans-serif;
+}
+
+.add-font {
+  font-family: "MetaOffcPro Norm", Arial, sans-serif;
+}

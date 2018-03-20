@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import '../sass/main.scss';
+// import '../sass/main.scss';
 
 export default class IndexPage extends React.Component {
   renderLinks() {
