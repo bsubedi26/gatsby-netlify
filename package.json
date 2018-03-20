@@ -16,6 +16,7 @@
     "gatsby-remark-images": "^1.5.56",
     "gatsby-source-filesystem": "^1.5.27",
     "gatsby-transformer-remark": "^1.7.37",
-    "netlify-identity-widget": "^1.4.11"
+    "netlify-identity-widget": "^1.4.11",
+    "puppeteer": "^1.2.0"
   }
 }

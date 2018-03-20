@@ -3,7 +3,6 @@ import React from 'react';
 export default function Template({ data }) {
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark;
-  console.log(frontmatter);
   return (
     <div>
       <div className="blog-post__container">
