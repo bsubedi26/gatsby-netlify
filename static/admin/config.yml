@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  repo: alexsteele110/gatsby-netlify
+  name: github
+  repo: bsubedi26/gatsby-netlify
 
 media_folder: static/assets
 public_folder: assets
